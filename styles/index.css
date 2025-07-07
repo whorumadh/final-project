@@ -1,0 +1,257 @@
+:root {
+    --color-bg: #f4f1e0;
+    --color-navbar: #2b2b2b;
+    --color-text: #ffffff;
+    --color-accent: #ffd700;
+    --color-hover: rgba(255, 215, 0, 0.2);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: var(--color-bg);
+    color: #333;
+}
+
+.navbar {
+    background-color: var(--color-navbar);
+    color: var(--color-text);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 2rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+}
+
+.brand__logo {
+    width: 40px;
+    height: auto;
+    margin-right: 0.8rem;
+}
+
+.brand__title {
+    font-size: 1.4rem;
+    letter-spacing: 1px;
+}
+
+.nav__list {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+
+.nav__link {
+    color: var(--color-text);
+    text-decoration: none;
+    font-weight: 500;
+    padding: 8px 12px;
+    border-radius: 4px;
+    transition: background 0.25s, color 0.25s;
+}
+
+.nav__link:hover {
+    background-color: var(--color-hover);
+}
+
+.nav__link--active {
+    background-color: var(--color-accent);
+    color: #000;
+}
+
+.hero {
+    background: url(https://images3.alphacoders.com/130/1304178.jpg) center/cover no-repeat;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.hero h2 {
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+}
+
+.hero p {
+    font-size: 1.25rem;
+}
+
+.featured-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1.5rem;
+    padding: 2rem;
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 1.5rem;
+    text-align: center;
+    box-shadow: 0 2px 6 px rgba(0, 0, 0, 0.15);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.card h3 {
+    margin-bottom: 0.5rem;
+    font-size: 1.5rem;
+}
+
+.card p {
+    margin-bottom: 1rem;
+    color: #555;
+}
+
+.btn {
+    display: inline-block;
+    background: var(--color-accent);
+    color: #000;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.classes-intro {
+    text-align: center;
+    padding: 3rem 1rem;
+}
+
+.classes-intro h2 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.classes-intro p {
+    font-size: 1.1rem;
+    max-width: 600px;
+    margin: auto;
+    color: #555;
+}
+
+.class-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    padding: 2rem;
+}
+
+.class-card {
+    background: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    text-align: center;
+    box-shadow: 0 2px 6 px rgba(0, 0, 0, 0.15);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.class-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.class-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    object-position: 50% 5%;
+}
+
+.class-card h3 {
+    margin: 1rem 0 0.5rem;
+    font-size: 1.3rem;
+    color: #222;
+}
+
+.class-card p {
+    padding: 0 1rem;
+    color: #666;
+    font-size: 0.95rem;
+}
+
+.learn-btn {
+    display: inline-block;
+    margin: 1rem auto 1.5rem;
+    padding: 0.6rem 1rem;
+    background: var(--color-accent);
+    color: #000;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: background 0.3s;
+}
+
+.learn-btn:hover {
+    background: #ffe066;
+}
+
+.about-section {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+.about-section h2 {
+    font-size: 2.2rem;
+    margin-bottom: 0.5rem;
+    text-align: center;
+}
+
+.about-section h3 {
+    font-size: 1.6rem;
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.about-section p {
+    margin-bottom: 1rem;
+    color: #444;
+}
+
+.about-section ul {
+    list-style: disc inside;
+    margin-left: 1rem;
+    color: #444;
+}
+
+.about-section li {
+    margin-bottom: 0.75rem;
+}
+
+.footer {
+    background-color: var(--color-navbar);
+    color: var(--color-text);
+    text-align: center;
+    padding: 1rem;
+}
+
+@media (max-width: 600px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav__list {
+        width: 100%;
+        justify-content: space-around;
+        margin-top: 8px;
+    }
+}
+
