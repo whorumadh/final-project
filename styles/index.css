@@ -18,6 +18,23 @@ body {
     color: #333;
 }
 
+.skip-link {
+    position: absolute;
+    top: -3rem;
+    left: 1rem;
+    background: var(--color-accent);
+    color: #000;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: top 0.3s ease;
+    z-index: 100;
+}
+
+.skip-link:focus {
+    top: 1rem;
+}
+
 .navbar {
     background-color: var(--color-navbar);
     color: var(--color-text);
@@ -233,6 +250,22 @@ body {
 
 .about-section li {
     margin-bottom: 0.75rem;
+}
+
+.about-logo {
+    text-align: center;
+    padding: 2rem 1rem;
+}
+
+.about-logo img {
+    max-width: 200px;
+    height: auto;
+    opacity: 0.9;
+    transition: transform 0.3s;
+}
+
+.about-logo img:hover {
+    transform: scale(1.05);
 }
 
 .footer {
